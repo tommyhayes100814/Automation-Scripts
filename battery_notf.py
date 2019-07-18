@@ -46,10 +46,3 @@ def notify(title, text):
 
 if __name__ == '__main__':
     notify(title, text)
-
-
-
-python3 /Users/thomashayes/Development/python/automation/daily_startup.py
-
-
-    /Users/thomashayes/Development/python/automation daily_startup.py
