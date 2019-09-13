@@ -8,13 +8,13 @@ percent = 'pmset -g batt | grep -Eo "\d+%" | cut -d% -f1'
 charge = 'pmset -g batt | grep "Battery Power"'
 
 # specify the minimum percent that you want to get notified
-min_percent = 40
+min_percent = 30
 
 # title of your reminder
 title = 'Battery Reminder'
 
 # text within your reminder
-text = f'Battery has fallen below {min_percent}%, charge you battery sometine soon'
+text = f'Battery has fallen below {min_percent}%, charge you battery sometime soon'
 
 # function to see if the computer is plugged in or not
 def is_charging(percent):
