@@ -3,10 +3,12 @@ import os
 from twilio.rest import Client
 
 # input city here
-city = 'Cincinnati'
+city = '-Enter desired city here-'
 weatherkey = '-Enter weather key here-'
 twilo_id = '-Enter twilo id here-'
 twilo_token = '-Enter twilo token here-'
+twilo_number = '+' + '-Enter twilo number here'
+personal_number = '+' + '-Enter personal number here'
 
 # degree sign unicode symbbol
 degree_sign= u'\N{DEGREE SIGN}'
@@ -45,8 +47,8 @@ def alert(title):
     message = client.messages \
                             .create(
                                  body=farenh,
-                                 from_='+18596956488',
-                                 to='+18597970224'
+                                 from_=twilo_number,
+                                 to=personal_number
                              )
 
     print(message)
